@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
 
     <title>Hello, world!</title>
   </head>
@@ -14,12 +16,13 @@
     <!-- navigation start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="./">Computer Blog</a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="about-us.php">About us</a>
           </li>
@@ -38,6 +41,7 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
+
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -88,7 +92,7 @@
     <!-- cards end -->
 
     <!-- slider start -->
-    <div class="container-fluid">
+    <div class="">
       <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -137,44 +141,48 @@
     <!-- slider end -->
 
     <!-- footer start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 bg-secondary">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
+          <div class="font-weight-bold">Imporrtant Links</div>
           <ul>
-            <li><a href="./">Home</a></li>
+            <li><a href="./"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="about-us.php">About Us</a></li>
-            <li>Link 3</li>
           </ul>
         </div>
-        <div class="col-md-3">
+
+        <div class="col-md-4">
+          <div class="font-weight-bold">Address</div>
           <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="https://www.instagram.com/arnabmunshi/" target="blank">Instagram</a></li>
-            <li><a href="">Twitter</a></li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Kolkata, WB, India</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> info@webprismits.com</li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-          </ul>
+
+        <div class="col-md-4">
+          <div class="font-weight-bold">News Letter</div>
+          <form class="form-inline my-2 my-lg-0 subscribe_form">
+            <input class="form-control mr-sm-2" type="text" placeholder="Email address" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Subscribe</button>
+          </form>
+
+          <div>
+            <a href="https://facebook.com/arnabmunshi" target="blank">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://twitter.com/arnabmunshi" target="blank">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <!-- footer end -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
